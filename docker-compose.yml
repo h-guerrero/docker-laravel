@@ -13,6 +13,7 @@ services:
       - .docker.env
     environment:
       CONTAINER_ROLE: app
+      #APP_ENV: production
     volumes:
       - .:/var/www/html
     ports:

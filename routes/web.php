@@ -11,11 +11,4 @@
 |
 */
 
-Route::get('/', function () {
-    app('log')->info("Welecome perro!");
-    return view('welcome');
-});
-
-Route::get('/hello', function (){
-    return "Hello World!";
-});
+Route::view('/', 'welcome');
